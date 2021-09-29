@@ -2,13 +2,16 @@ import {useHistory} from 'react-router-dom'
 import { Box, Button, makeStyles, Typography } from '@material-ui/core'
 
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(theme=>({
     component: {
         margin: '80px 140px',
         width: '80%',
         background: '#fff',
-        height: '65vh'
-
+        height: '65vh',
+        [theme.breakpoints.down('sm')]:{
+            margin:"auto",
+            height: '80vh',
+        }
     },
     container: {
         textAlign:'center',
@@ -20,7 +23,10 @@ const useStyle = makeStyles({
 
     },
     image: {
-        width: '15%'
+        width: '15%',
+        [theme.breakpoints.down('sm')]:{
+            width:'70%'
+        }
     },
     button:{
         marginTop:20,
@@ -30,7 +36,7 @@ const useStyle = makeStyles({
         background:'#2874f0',
         color:'#fff'
     },
-})
+}))
 
 const EmptyCart = () => {
     const classes = useStyle()
