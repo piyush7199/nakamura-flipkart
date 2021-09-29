@@ -29,8 +29,9 @@ const useStyle = makeStyles(theme => ({
                 color: '#2874f0',
                 alignItems: 'center',
                 display: 'flex',
-                flexDirection: 'column',
-                marginTop: 10
+                flexDirection: 'unset',
+                marginTop: 10,
+                justifyContent:'center',
             }
         },
         [theme.breakpoints.down('sm')]: {
