@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'https://nakamura-flipkart.herokuapp.com/'
+const url = 'https://nakamura-flipkart.herokuapp.com'
 
 export const authenticateSignup = async (user) => {
     try {

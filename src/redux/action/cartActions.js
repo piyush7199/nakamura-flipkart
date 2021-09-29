@@ -2,7 +2,7 @@ import axios from "axios";
 
 import * as actionTypes from '../constents/cartConstents.js'
 
-const url = 'https://nakamura-flipkart.herokuapp.com/'
+const url = 'https://nakamura-flipkart.herokuapp.com'
 
 export const addToCart = (id) => async (dispatch) => {
     try {

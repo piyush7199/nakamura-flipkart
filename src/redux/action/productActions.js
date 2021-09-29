@@ -2,7 +2,7 @@ import axios from "axios";
 
 import * as action from '../constents/productContents.js'
 
-const url = 'https://nakamura-flipkart.herokuapp.com/'
+const url = 'https://nakamura-flipkart.herokuapp.com'
 
 export const getProducts = () => async (dispatch)  =>{
     try {
