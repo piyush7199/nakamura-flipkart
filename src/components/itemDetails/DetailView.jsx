@@ -17,7 +17,9 @@ const useStyle = makeStyles(theme=>({
         background: '#fff',
         display: 'flex',
         [theme.breakpoints.down('md')]:{
-            margin:0
+            margin:0,
+            width:'fit-content',
+            padding:10,
         }
     },
     rightContainer: {
@@ -39,11 +41,20 @@ const useStyle = makeStyles(theme=>({
     },
     price: {
         fontSize: 28,
+        [theme.breakpoints.down('sm')]:{
+            fontWeight:600
+        }
     },
     badge: {
         fontSize: 14,
         marginRight: 10,
         color: '#00cc00'
+    },
+    title_long:{
+        [theme.breakpoints.down('sm')]:{
+            fontWeight:600,
+            // fontSize:20
+        }
     }
 }))
 
@@ -68,7 +79,7 @@ const DetailView = ({ match }) => {
                         <ActionItem product={product} />
                     </Grid>
                     <Grid item lg={8} md={8} sm={8} xs={12} className={classes.rightContainer}>
-                        <Typography>{product.title.longTitle}</Typography>
+                        <Typography className={classes.title_long}>{product.title.longTitle}</Typography>
                         <Typography className={clsx(classes.smallText, classes.greyText)} style={{marginTop: 5}}>8 Ratings & 2 Reviews<span><img src={fassured} style={{ width: 77, marginLeft: 20 }} /></span></Typography>
                         <Typography>
                             <span className={classes.price}>₹{product.price.cost}</span> &nbsp;&nbsp;&nbsp;
