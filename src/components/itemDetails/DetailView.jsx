@@ -51,10 +51,8 @@ const useStyle = makeStyles(theme=>({
         color: '#00cc00'
     },
     title_long:{
-        [theme.breakpoints.down('sm')]:{
-            fontWeight:600,
-            // fontSize:20
-        }
+        fontWeight:600,
+        fontSize:20
     }
 }))
 

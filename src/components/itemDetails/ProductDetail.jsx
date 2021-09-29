@@ -30,7 +30,7 @@ const ProductDetail = ({ product }) => {
     
     return (
         <>
-            <Typography>Available offers</Typography>
+            <Typography style={{fontWeight:600}}>Available offers</Typography>
             <Box className={classes.smallText}>
                 <Typography><Badge className={classes.badge} />Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card</Typography>
                 <Typography><Badge className={classes.badge} />Bank Offer 10% Off on Bank of Baroda Mastercard debit card first time transaction, Terms and Condition apply</Typography>
@@ -50,7 +50,7 @@ const ProductDetail = ({ product }) => {
                     <TableRow className={classes.smallText}>
                         <TableCell className={classes.greyTextColor}>Seller</TableCell>
                         <TableCell className={classes.smallText}>
-                            <span style={{ color: '#2874f0' }}>SuperComNet</span>
+                            <span style={{ color: '#2874f0' }}>Nakamura</span>
                             <Typography>GST invoice available</Typography>
                             <Typography>View more sellers starting from ₹329</Typography>
                         </TableCell>
